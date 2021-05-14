@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/d3.min.js"></script>
+    <script src="data/data.js"></script>
+</head>
+<body>
+    <!--<svg width="960" height="600"></svg>-->
+    <div id="svg-container"></div>
+    <script src="js/main.js"></script>
+
+    <div id="controls-div">
+        <label><input type='checkbox' onclick='showLabelsCbChanged(this);'>Show labels</label>
+        <br></br>
+
+        <label for="search">Search node:</label>
+        <input type="search" name="search" oninput="text_changed(this.value)">
+        <br></br>
+        <input type="range" min="-10" max="10" value="0.1" class="slider" id="myRange">
+    </div>
+</body>
+</html>
